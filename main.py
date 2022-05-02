@@ -29,7 +29,7 @@ on the trained eye of a radiologist [3].
 st.text(pneumonia_text)
 
 # comparison of lungs
-image_comparison(img1=HEALTHY_LUNG, label1="A Healthy Lung", img2=INFECTED_LUNG, label2="Lung With Pneumonia")
+#image_comparison(img1=HEALTHY_LUNG, label1="A Healthy Lung", img2=INFECTED_LUNG, label2="Lung With Pneumonia")
 
 # what and how are we going to solve this
 st.header("The Project")
