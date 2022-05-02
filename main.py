@@ -5,15 +5,25 @@ favicon created by: https://favicon.io/emoji-favicons/lungs
 
 import streamlit as st
 from streamlit_image_comparison import image_comparison
-import cv2
+import requests
+from PIL import Image
+from io import BytesIO
 
 # texts and image paths
 ABOUT_TEXT = "Created by Felix Schuhmann, Hussein Galal and Philippe Huber."
-HEALTHY_LUNG = cv2.cvtColor(cv2.imread("Photos/IM-0135-0001.jpeg"), cv2.COLOR_BGR2RGB)
-INFECTED_LUNG = cv2.cvtColor(cv2.imread("Photos/person45_bacteria_222.jpeg"), cv2.COLOR_BGR2RGB)
+ICON = ".images/lungs_favicon.png"
+
+url = "https://github.com/okodun/Chest-X-Ray-Classification/blob/main/Streamlit_App/.images/healthy_lung.jpeg?raw=true"
+connection = requests.get(url)
+HEALTHY_LUNG = Image.open(BytesIO(connection.content))
+
+url = "https://github.com/okodun/Chest-X-Ray-Classification/blob/main/Streamlit_App/.images/infected_lung.jpeg?raw=true"
+connection = requests.get(url)
+INFECTED_LUNG = Image.open(BytesIO(connection.content))
 
 # set page configuration for app
 st.set_page_config(page_title="Chest X-Ray Classification",
+                   page_icon=ICON,
                    layout="wide",
                    menu_items={"About": ABOUT_TEXT})
 
@@ -75,10 +85,10 @@ with st.expander("References"):
     references = """
     [1] Pneumonia, World Health Organization
     https://www.who.int/news-room/fact-sheets/detail/pneumonia
-
+    
     [2] Five Facts You Should Know About Pneumonia, American Lung Association
     https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia/five-facts-you-should-know
-
+    
     [3] CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning, Rajpurkar et al. 2017
     https://arxiv.org/pdf/1711.05225.pdf
     """
