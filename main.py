@@ -4,7 +4,7 @@ favicon created by: https://favicon.io/emoji-favicons/lungs
 """
 
 import streamlit as st
-from streamlit_image_comparison import image_comparison
+#from streamlit_image_comparison import image_comparison
 import cv2
 
 # texts and image paths
