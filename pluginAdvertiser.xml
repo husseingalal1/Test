@@ -982,6 +982,22 @@
             </plugin>
           </value>
         </entry>
+        <entry key="biblatex-dm.cfg">
+          <value>
+            <plugin>
+              <option name="myPluginId" value="nl.rubensten.texifyidea" />
+              <option name="myPluginName" value="TeXiFy IDEA" />
+            </plugin>
+          </value>
+        </entry>
+        <entry key="biblatex.cfg">
+          <value>
+            <plugin>
+              <option name="myPluginId" value="nl.rubensten.texifyidea" />
+              <option name="myPluginName" value="TeXiFy IDEA" />
+            </plugin>
+          </value>
+        </entry>
         <entry key="buildout.cfg">
           <value>
             <plugin>
@@ -1011,9 +1027,29 @@
             <FeaturePluginsList>
               <option name="featureMap">
                 <map>
+                  <entry key="BIBTEX_RUN_CONFIGURATION">
+                    <value>
+                      <FeaturePluginData displayName="BibTeX" pluginName="TeXiFy IDEA" pluginId="nl.rubensten.texifyidea" />
+                    </value>
+                  </entry>
                   <entry key="CompoundRunConfigurationType">
                     <value>
                       <FeaturePluginData displayName="Compound" pluginName="IDEA CORE" pluginId="com.intellij" />
+                    </value>
+                  </entry>
+                  <entry key="EXTERNAL_TOOL_RUN_CONFIGURATION">
+                    <value>
+                      <FeaturePluginData displayName="External LaTeX Tool" pluginName="TeXiFy IDEA" pluginId="nl.rubensten.texifyidea" />
+                    </value>
+                  </entry>
+                  <entry key="LATEX_RUN_CONFIGURATION">
+                    <value>
+                      <FeaturePluginData displayName="LaTeX" pluginName="TeXiFy IDEA" pluginId="nl.rubensten.texifyidea" />
+                    </value>
+                  </entry>
+                  <entry key="MAKEINDEX_RUN_CONFIGURATION">
+                    <value>
+                      <FeaturePluginData displayName="Makeindex" pluginName="TeXiFy IDEA" pluginId="nl.rubensten.texifyidea" />
                     </value>
                   </entry>
                   <entry key="PythonConfigurationType">
