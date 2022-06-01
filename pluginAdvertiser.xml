@@ -100,8 +100,8 @@
         <entry key="*.csv">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.chesterccw.excelreader" />
-              <option name="myPluginName" value="ExcelReader" />
+              <option name="myPluginId" value="net.seesharpsoft.intellij.plugins.csv" />
+              <option name="myPluginName" value="CSV" />
             </plugin>
           </value>
         </entry>
@@ -597,6 +597,14 @@
             </plugin>
           </value>
         </entry>
+        <entry key="*.psv">
+          <value>
+            <plugin>
+              <option name="myPluginId" value="net.seesharpsoft.intellij.plugins.csv" />
+              <option name="myPluginName" value="CSV" />
+            </plugin>
+          </value>
+        </entry>
         <entry key="*.py">
           <value>
             <plugin>
@@ -740,6 +748,14 @@
             </plugin>
           </value>
         </entry>
+        <entry key="*.tab">
+          <value>
+            <plugin>
+              <option name="myPluginId" value="net.seesharpsoft.intellij.plugins.csv" />
+              <option name="myPluginName" value="CSV" />
+            </plugin>
+          </value>
+        </entry>
         <entry key="*.tex">
           <value>
             <plugin>
@@ -789,6 +805,14 @@
               <option name="myPluginId" value="com.intellij" />
               <option name="myPluginName" value="IDEA CORE" />
               <option name="myBundled" value="true" />
+            </plugin>
+          </value>
+        </entry>
+        <entry key="*.tsv">
+          <value>
+            <plugin>
+              <option name="myPluginId" value="net.seesharpsoft.intellij.plugins.csv" />
+              <option name="myPluginName" value="CSV" />
             </plugin>
           </value>
         </entry>
